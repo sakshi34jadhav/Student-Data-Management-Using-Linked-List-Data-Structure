@@ -1,4 +1,4 @@
-STUDENT RECORD MANAGEMENT SYSTEM - MINI PROJECT II
+STUDENT RECORD MANAGEMENT SYSTEM - MINI PROJECT
 
 Files:
   student.h    Structure and function declarations
