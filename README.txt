@@ -1,79 +1,58 @@
-# STUDENT RECORD MANAGEMENT SYSTEM — MINI PROJECT
+STUDENT RECORD MANAGEMENT SYSTEM
+Mini Project | C Programming
 
-## Project Overview
-The Student Record Management System is a menu-driven application developed in C to manage student records efficiently. It supports adding, deleting, modifying, displaying, sorting, and storing student information using structures, pointers, dynamic memory allocation, and file handling.
+1. Project Description
+The Student Record Management System is a menu-driven application developed in C. It uses a singly linked list to store and manage student records dynamically.
 
-## Developer Details
-- **Developer Name:** Sakshi Jadhav.
-- **Project Title:** Student Record Management System
-- **Project Type:** Mini Project
-- **Programming Language:** C
-- **Development Environment:** GCC Compiler
-- **Platform:** Linux / Windows (with GCC)
-- **Project Category:** File Handling and Data Structures
+2. Student Record Structure
+Each student record contains:
+* Roll Number
+* Student Name
+* Percentage
+* Pointer to the next student node
 
-## Key Features
-- Add new student records.
-- Automatically assign the smallest unused positive roll number.
-- Delete student records by roll number or name.
-- Modify records using roll number, name, or percentage.
-- Display and sort student records.
-- Save records to a file and load them at startup.
-- Delete all records from the in-memory list.
-- Reverse the student list.
-- Dynamically allocate and free memory.
-- Choose whether to save changes before exiting.
+3. Project Modules
+* stud_main.c – Main function and menu.
+* stud_add.c – Add a new student record.
+* stud_del.c – Delete a record by roll number or name.
+* stud_show.c – Display and sort student records.
+* stud_mod.c – Modify an existing student record.
+* stud_save.c – Save/load records, delete all records, reverse the list, and release memory.
+* student.h – Structure definition and function declarations.
 
-## Project File Structure
-- `student.h` — Contains the student structure and function declarations.
-- `stud_main.c` — Handles the menu and main program flow.
-- `stud_add.c` — Adds student records and assigns roll numbers.
-- `stud_del.c` — Deletes records by roll number or name.
-- `stud_show.c` — Displays and sorts student records.
-- `stud_mod.c` — Modifies records by roll number, name, or percentage.
-- `stud_save.c` — Handles file operations, saving/loading records, deleting all records, reversing the list, and freeing memory.
+4. Features
+* Add student records with the smallest available positive roll number.
+* Delete records by roll number or name.
+* Display all student records.
+* Modify records by roll number, name, or percentage.
+* Sort records alphabetically by name or by percentage in descending order.
+* Save and load records using student.dat.
+* Delete all records from memory.
+* Reverse the singly linked list.
+* Free dynamically allocated memory before exiting.
 
-## Compilation
-Compile all source files using GCC:
+5. Compilation
+Open the terminal in the project directory and execute:
 
-```bash
 gcc stud_main.c stud_add.c stud_del.c stud_show.c stud_mod.c stud_save.c -o student
-```
 
-## Execution
-
-On Linux:
-
-```bash
+6. Execution
+Run the program using:
 ./student
-```
 
-On Windows Command Prompt:
+7. File Handling
+Student records are stored in the binary file student.dat. Existing records are loaded when the program starts. The user can save records using the v/V menu option or choose Save and Exit.
 
-```bash
-student.exe
-```
+8. Concepts Used
+* Structures
+* Pointers
+* Singly linked lists
+* Dynamic memory allocation (malloc)
+* Memory deallocation (free)
+* String handling
+* Searching and sorting
+* File handling
+* Modular programming
 
-## Data Storage and Save Mechanism
-- The program loads existing student records from `student.dat` at startup.
-- Choose `V/v` to save records during program execution.
-- On exit, choose `S/s` to save and exit, or `E/e` to exit without saving.
-- Deleting all records affects only the in-memory list until the user explicitly saves the changes.
-
-## Concepts Used
-- Structures and user-defined data types
-- Pointers and linked-list operations (if implemented using a linked list)
-- Dynamic memory allocation and deallocation
-- File handling in C
-- Modular programming using multiple source files
-- Functions and header files
-- Searching, sorting, insertion, and deletion
-- Menu-driven programming
-
-## Learning Outcomes
-This project demonstrates practical knowledge of C programming, memory management, modular code organization, and file persistence. It also illustrates how student information can be managed through a simple command-line interface.
-
-## Author
-**Sakshi Jadhav**
-
-*Student Record Management System — Developed as a C programming mini project.*
+9. Conclusion
+This project demonstrates how linked lists, dynamic memory allocation, searching, sorting, and file handling can be used to manage student records efficiently in C.
