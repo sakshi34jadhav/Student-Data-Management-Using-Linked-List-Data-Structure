@@ -1,4 +1,4 @@
-STUDENT RECORD MANAGEMENT SYSTEM
+Student Data Management Using Linked List Data Structure
 Mini Project | C Programming
 
 1. Project Description
